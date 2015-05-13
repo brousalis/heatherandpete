@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+// Global
+body {
+  font-family: $font-family-base;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: 300;
+}
+
+h1, h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.text-success { color: $brand-success; }
+.text-danger { color: $brand-danger; }

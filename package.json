@@ -1,0 +1,10 @@
+{
+  "name": "wedding",
+  "version": "0.0.0",
+  "devDependencies": {},
+  "dependencies": {},
+  "scripts": {},
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}
