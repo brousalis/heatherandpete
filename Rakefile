@@ -1,12 +1,7 @@
 require 'rake'
 require 'dotenv'
 
-# Import tasks
-Dir.glob('config/tasks/*.rake').each { |r| import r }
-
 def build_and_deploy
-  Rake::Task['git:verify'].invoke
-
   system("middleman build")
 end
 
