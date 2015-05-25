@@ -1,3 +1,8 @@
+require 'slim'
+
+# dumb :locals warn, thanks slim
+Slim::Engine.disable_option_validator!
+
 ###
 # Compass
 ###
@@ -35,9 +40,6 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Reload the browser automatically whenever files change
-activate :livereload
-
 # Turn on autoprefixer
 activate :autoprefixer  do |config|
   config.browsers = ['last 3 versions', 'Explorer >= 9']
@@ -54,11 +56,14 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'app'
 set :images_dir, 'images'
 
-sprockets.append_path File.join "#{root}", "bower_components"
-sprockets.append_path File.join "#{root}", "source", "common"
+sprockets.append_path File.join root, 'bower_components'
+sprockets.append_path File.join root, "source", "common"
 
 ignore '.idea/*'
 ignore 'test/**'
+
+# Reload the browser automatically whenever files change
+activate :livereload, apply_js_live: false, apply_css_live: false
 
 # Development-specific configuration
 configure :development do
@@ -73,15 +78,15 @@ configure :build do
   activate :minify_css
 
   # Minify HTML on build
-  #activate :minify_html
+  activate :minify_html
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  #activate :minify_javascript
 
   # Enable cache buster
   activate :asset_hash
 
- # Use relative URLs
+  # Use relative URLs
   # activate :relative_assets
 
   # Or use a different image path

@@ -1,0 +1,42 @@
+.guest_item
+  position: relative
+  text-align: center
+  width: 200px
+  margin: 0 auto
+
+.guest_wrapper
+  height: 330px 
+  margin-top: 80px
+
+.guest_txt
+  position: absolute
+  display: none
+
+.guest_photo
+  width: 200px
+  height: 200px
+  position: relative
+  img
+    border-radius: 50%
+  &:before
+    border: 10px solid rgba(255, 255, 255, 0.4)
+    border-radius: 50%
+    content: ""
+    display: block
+    height: 100%
+    position: absolute
+    width: 100%
+
+.guest_title
+  font: 30px/40px Great Vibes
+  color: #757575
+  z-index: 3
+  span
+    display: block
+    font: 300 16px/24px Roboto Condensed
+    margin: 20px 0 0
+
+.guest_item i:before
+  font-size: 18px !important
+  color: #999
+

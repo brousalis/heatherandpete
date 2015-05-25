@@ -1,0 +1,134 @@
+.owl-prev
+  width: 86px
+  height: 185px
+  position: absolute
+  cursor: pointer
+  text-indent: -10000px
+  left: -120px
+  top: 80px 
+  margin: -55px 0 0 0
+  padding: 0 10px
+  transition: background 0.5s
+  &:before
+    width: 1px
+    height: 100px
+    transform: rotate(-145deg)
+    background: #bdbdbd
+    content: ""
+    display: block
+    transition: transform 0.2s
+    position: absolute
+    transform-origin: top
+    top: 93px
+  &:hover
+    &:before
+      transform: rotate(-150deg)
+    &:after
+      transform: rotate(150deg)
+  &:after
+    width: 1px
+    height: 100px
+    transform: rotate(145deg)
+    background: #bdbdbd
+    content: ""
+    display: block
+    position: absolute
+    transform-origin: bottom
+    transition: transform 0.2s
+    top: -8px
+
+.owl-carousel:hover
+  .owl-next, .owl-prev
+
+.owl-next
+  width: 86px
+  height: 185px
+  right: 0
+  position: absolute
+  cursor: pointer
+  right: -120px
+  text-indent: -10000px
+  top: 80px
+  margin: -55px 0 0 0
+  padding: 0 10px
+  transition: background 0.5s
+  &:before
+    width: 1px
+    height: 100px
+    transform: rotate(145deg)
+    background: #bdbdbd
+    content: ""
+    display: block
+    transition: transform 0.2s
+    position: absolute
+    transform-origin: top
+    top: 93px
+    margin: 0 0 0 62px
+  &:hover
+    &:before
+      transform: rotate(150deg)
+    &:after
+      transform: rotate(-150deg)
+  &:after
+    width: 1px
+    height: 100px
+    transform: rotate(-145deg)
+    background: #bdbdbd
+    content: ""
+    display: block
+    position: absolute
+    transform-origin: bottom
+    transition: transform 0.2s
+    top: -8px
+    margin: 0 0 0 62px
+
+.owl-controls
+  text-align: center
+
+.owl-pagination
+  margin: 55px 0 0 0
+  display: inline-block
+  padding: 0 22px
+  position: relative
+  background: url(../images/arrow_back.png) repeat-x
+  height: 1px
+  background-size: cover
+  &:before
+    display: block
+    content: ""
+    background: url(../images/arrow_end.png)
+    width: 31px
+    height: 17px
+    margin: -8px 0 0 -53px
+    background-size: cover
+    position: absolute
+  &:after
+    display: block
+    content: ""
+    background: url(../images/arrow_start.png)
+    width: 8px
+    right: 0
+    height: 7px
+    top: 0
+    margin: -3px -7px 0 0
+    background-size: cover
+    position: absolute
+
+.owl-page
+  width: 48px
+  height: 48px
+  display: inline-block
+  position: relative
+  margin: -21px 0 0 0
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    width: 16px
+    height: 26px
+    margin: 8px 0 0 16px
+    background: url(../images/bullet.png)
+    background-size: cover
+  &.active:after
+    background: url(../images/bullet_active.png)
+    background-size: cover

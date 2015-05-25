@@ -1,0 +1,87 @@
+.home_intro
+  background-color: #000
+  width: 100%
+  height: 100%
+  position: relative
+  background-repeat: no-repeat
+  background-position: center
+  background-attachment: fixed
+  background-size: cover
+  z-index: 0
+
+  &:after
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    pointer-events: none
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0))
+
+  > div
+    position: absolute
+    margin: 0
+    width: 100%
+    z-index: 3
+    bottom: 10% 
+
+    h1
+      font-size: 72px
+      text-shadow: 0px 5px 4px rgba(16, 16, 16, 0.34)
+      margin-bottom: 30px
+
+  .date
+    font-family: Roboto Condensed
+    opacity: 0.8
+    font-size: 16px 
+    margin-top: 10px
+    letter-spacing: 1px
+    font-weight: 300
+    text-transform: uppercase
+
+    sup 
+      top: -3px
+
+
+.firefly
+  width: 100%
+  height: 100%
+  z-index: 2
+  position: absolute
+  div
+    border-radius: 50%
+    opacity: 0.8
+
+.intro_down
+  position: absolute
+  bottom: 10px
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CgogPGc+CiAgPHRpdGxlPmJhY2tncm91bmQ8L3RpdGxlPgogIDxyZWN0IGZpbGw9Im5vbmUiIGlkPSJjYW52YXNfYmFja2dyb3VuZCIgaGVpZ2h0PSI0MDIiIHdpZHRoPSI1ODIiIHk9Ii0xIiB4PSItMSIvPgogPC9nPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGZpbGw9IiNmZmZmZmYiIGlkPSJzdmdfMSIgZD0ibTI1NiwyOTcuMjk5OTg4bDAsMGwwLDBsMTc0LjIwMDAxMiwtMTY3LjE5OTk5N2M0LjI5OTk4OCwtNC4yMDAwMDUgMTEuMzk5OTk0LC00LjA5OTk5OCAxNS43OTk5ODgsMC4xOTk5OTdsMzAuNjAwMDA2LDI5LjkwMDAwOWM0LjM5OTk5NCw0LjI5OTk4OCA0LjUsMTEuMjk5OTg4IDAuMTk5OTgyLDE1LjVsLTIxMi42OTk5ODIsMjA0LjE5OTk5N2MtMi4xOTk5ODIsMi4xOTk5ODIgLTUuMTk5OTgyLDMuMTk5OTgyIC04LjEwMDAwNiwzYy0yLjk5OTk4NSwwLjEwMDAwNiAtNS44OTk5OTQsLTAuODk5OTk0IC04LjA5OTk5MSwtM2wtMjEyLjcwMDAwOCwtMjA0LjE5OTk5N2MtNC4zMDAwMDEsLTQuMTk5OTk3IC00LjIwMDAwMSwtMTEuMTk5OTk3IDAuMjAwMDAxLC0xNS41bDMwLjU5OTk5OCwtMjkuODk5OTk0YzQuNDAwMDAyLC00LjMwMDAwMyAxMS41LC00LjQwMDAwMiAxNS44MDAwMDMsLTAuMTk5OTk3bDE3NC4xOTk5OTcsMTY3LjE5OTk4MnoiLz4KIDwvZz4KPC9zdmc+')
+  background-size: 100%
+  opacity: 1
+  width: 40px 
+  height: 40px 
+  margin-left: -20px
+  animation: 2s pulse ease-in-out infinite
+  animation-delay: 4s
+  z-index: 100
+
+.home_intro > div
+  animation: bounceInUp 2s
+  
+.home_intro h1
+  animation: tada 1s
+  animation-delay: 2s
+
+.home_intro .date 
+  animation: fadeO 2s
+  animation-delay: 0
+
+@keyframes fadeO
+  0% 
+    opacity: 0
+  80% 
+    opacity: 0
+  100% 
+    opacity: 0.8 

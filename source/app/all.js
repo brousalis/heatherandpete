@@ -1,5 +1,6 @@
-//= require jquery/jquery.js
-//= require angular/angular.js
-//= require angular-ui-router/release/angular-ui-router.js
+//= require owl-carousel/owl-carousel/owl.carousel.min.js
+//= require skrollr/dist/skrollr.min.js
+//= require jquery.countdown/dist/jquery.countdown.min.js
 
-//= require ../app/app
+//= require js/script.js
+//= require js/map.js
