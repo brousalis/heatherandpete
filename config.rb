@@ -88,8 +88,10 @@ configure :build do
   # Enable cache buster
   # activate :asset_hash
   # Optmize images
-  activate :imageoptim
-
+  activate :imageoptim do |options|
+    options.pngout = false # Should disable pngout
+    options.svgo = false # Should disable pngout
+  end
   # GZip all the things
   activate :gzip
   # Use relative URLs
