@@ -1,22 +1,23 @@
 section#married.married.clearfix
   .container
-    .married-image.parallax[data-bottom='left:20%' data-center='left:0' data-image='images/heather.jpg']
-    .married-image.right.parallax[data-bottom='right:20%' data-center='right:0' data-image='images/pete.jpg']
+    .married-image.parallax[data-image='images/heather.jpg']
+    .married-image.right.parallax[data-image='images/pete.jpg']
 
-    div[data-bottom='opacity:0' data-center='opacity:1']
-      h2
-        span
-          | You're
-        |  Invited
-      |  On the 14th of November, 2015
-      br
-      strong
-        | Heather Horstman & Pete Brousalis
-      br
-      |  are getting married
-      br
+    div
+      = image_tag 'married.png', class: 'married'
+      / h2
+      /   span
+      /     | You're
+      /   |  Invited
+      / |  On the 14th of November, 2015
+      / br
+      / strong
+      /   | Heather Horstman & Pete Brousalis
+      / br
+      / |  are getting married
+      / br
 
-      a.btn.btn-primary.large[href='#rsvp'] RSVP NOW
+      / a.btn.btn-primary.large[href='#rsvp'] RSVP NOW
 
-      .double_arrow
+      / .double_arrow
 

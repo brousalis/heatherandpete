@@ -15,25 +15,13 @@
     e.preventDefault()
     return
 
-  $('.registry_wrapper').owlCarousel
-    navigation: true
-    responsive: true
-    responsiveRefreshRate: 200
-    slideSpeed: 200
-    paginationSpeed: 200
-    rewindSpeed: 500
-    stopOnHover: true
-    autoHeight: true
-    items: 3
-    mouseDrag: false
-    autoPlay: true
-
   $('.guest_wrapper').owlCarousel
     navigation: true
     pagination: false
     responsive: true
     responsiveRefreshRate: 200
     slideSpeed: 200
+    scrollPerPage: true
     paginationSpeed: 200
     rewindSpeed: 500
     stopOnHover: true
