@@ -7,9 +7,6 @@
 # Ignore bundler config
 /.bundle
 
-# Never commit the build directory
-/build
-
 /.sass-cache
 
 .DS_Store
