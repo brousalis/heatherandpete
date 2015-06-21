@@ -1,21 +1,20 @@
 require 'rake'
 require 'dotenv'
-require 'middleman-gh-pages'
 
 def build_and_deploy
-  system("middleman build")
+  system("bundle exec middleman build")
 end
 
 namespace :build do
   desc 'Build Staging'
   task :staging do
     Dotenv.load '.env.staging'
-    system('middleman build')
+    system('bundle exec middleman build')
   end
 
   task :production do
     Dotenv.load '.env.production'
-    system('middleman build')
+    system('bundle exec middleman build')
   end
 end
 

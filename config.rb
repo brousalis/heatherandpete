@@ -83,11 +83,15 @@ configure :build do
   activate :minify_html
 
   # Minify Javascript on build
-  #activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   activate :asset_hash
+  # Optmize images
+  activate :imageoptim
 
+  # GZip all the things
+  activate :gzip
   # Use relative URLs
   # activate :relative_assets
 

@@ -7,6 +7,7 @@ gem 'middleman-minify-html'
 gem 'middleman-livereload', '~> 3.1.0'
 gem 'middleman-autoprefixer'
 gem 'middleman-gh-pages'
+gem 'middleman-imageoptim'
 
 # Dotenv
 gem 'middleman-dotenv'
