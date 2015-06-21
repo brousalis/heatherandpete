@@ -1,5 +1,6 @@
 require 'rake'
 require 'dotenv'
+require 'middleman-gh-pages'
 
 def build_and_deploy
   system("middleman build")
