@@ -10,5 +10,4 @@ gem 'middleman-gh-pages'
 
 # Dotenv
 gem 'middleman-dotenv'
-gem 'css2sass'
-gem 'html2slim'
+gem 'puma'
