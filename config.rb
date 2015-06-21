@@ -56,6 +56,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'app'
 set :images_dir, 'images'
 
+activate :directory_indexes
+
 sprockets.append_path File.join root, 'bower_components'
 sprockets.append_path File.join root, "source", "common"
 

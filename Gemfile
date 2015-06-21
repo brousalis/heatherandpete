@@ -11,3 +11,4 @@ gem 'middleman-gh-pages'
 # Dotenv
 gem 'middleman-dotenv'
 gem 'puma'
+gem "rack-contrib"
