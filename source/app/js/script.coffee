@@ -5,8 +5,7 @@
 
   $('section, .parallax').each ->
     image = $(this).attr('data-image')
-    if image
-      $(this).css 'background-image', 'url(' + image + ')'
+    $(this).css 'background-image', 'url(' + image + ')' if image
     return
 
   $('.intro_down, .go').on 'click', (e) ->
