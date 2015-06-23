@@ -35,3 +35,11 @@
     $(this).find('.hours').html event.strftime('%H')
     $(this).find('.minutes').html event.strftime('%M')
     $(this).find('.seconds').html event.strftime('%S')
+
+# Add scrolled class to nav
+$(window).scroll ->
+  if $(window).scrollTop() > $('.home_intro').height()
+    $('nav').addClass 'scrolled'
+  else
+    $('nav').removeClass 'scrolled'
+  return
