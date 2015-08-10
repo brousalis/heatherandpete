@@ -6,7 +6,7 @@
 
 # Ignore bundler config
 /.bundle
-
+build/
 /.sass-cache
 
 .DS_Store
